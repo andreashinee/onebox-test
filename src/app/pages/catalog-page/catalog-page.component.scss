@@ -1,0 +1,17 @@
+.catalog-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1rem 0.1rem;
+    padding: 1rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    place-items: center;
+  
+    @media (min-width: 48rem) {
+      grid-template-columns: repeat(2, 21.875rem);
+      gap: 1rem 0.1rem;
+      place-items: center;
+    }
+  }
+  

@@ -1,0 +1,15 @@
+<div class="cart">
+  @for (eventId of eventIds; track eventId) { @if (cart[eventId].length) {
+  <div class="cart-title">{{ cart[eventId][0].title || "Sin título" }}</div>
+  @for (item of cart[eventId]; track item.date) {
+  <div class="cart-item">
+    {{ item.date }}
+    <div class="cart-quantity">
+      x{{ item.quantity }}
+      <button (click)="remove(eventId, item.date)">
+        <img src="assets/img/trash.png" alt="Eliminar" />
+      </button>
+    </div>
+  </div>
+  } } }
+</div>

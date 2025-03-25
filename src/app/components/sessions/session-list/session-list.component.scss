@@ -1,0 +1,46 @@
+.session-list {
+    width: 24rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+  
+  .session {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    gap: 0.5rem;
+  
+    span {
+      font-size: 0.9rem;
+      color: #333;
+      flex: 1;
+    }
+  
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+  
+    button {
+      background: none;
+      border: none;
+      color: #008cba;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 0;
+      cursor: pointer;
+  
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  
+    .quantity {
+      font-size: 0.9rem;
+      min-width: 1.5rem;
+      text-align: center;
+    }
+  }
+  

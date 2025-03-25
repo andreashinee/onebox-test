@@ -1,0 +1,14 @@
+<div class="session-list">
+  @for (session of sessions; track session.date) {
+  <div class="session">
+    <span>
+      Fecha: {{ session.date }}, Disponibilidad: {{ session.availability }}
+    </span>
+    <div class="controls">
+      <button (click)="decrement(session)">-</button>
+      <span class="quantity">{{ session.selected }}</span>
+      <button (click)="increment(session)">+</button>
+    </div>
+  </div>
+  }
+</div>

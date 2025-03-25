@@ -1,0 +1,78 @@
+.event-card {
+    width: 20rem;
+    height: 25rem;
+    border: 0.0625rem solid #ccc;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  
+    &__header {
+      padding: 0.5rem 0.75rem;
+      background-color: #f9f9f9;
+    }
+  
+    &__title {
+      font-weight: bold;
+      color: #008cba;
+      font-size: 0.85rem;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+      display: block;
+    }
+  
+    &__subtitle {
+      color: #008cba;
+      font-size: 0.74rem;
+      font-weight: normal;
+      margin-bottom: 0;
+      line-height: 1.2;
+      display: block;
+    }
+  
+    &__image {
+      width: 100%;
+      height: 10rem;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+  
+    &__details {
+      padding: 0.5rem 0.75rem;
+      flex-grow: 1;
+    }
+  
+    &__date {
+      font-size: 0.78rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+  
+    &__description {
+      font-size: 0.74rem;
+      color: #444;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+  
+      @media (min-width: 48rem) {
+        display: block;
+      }
+    }
+  
+    &__button {
+      background-color: #008cba;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      margin-top: auto;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  

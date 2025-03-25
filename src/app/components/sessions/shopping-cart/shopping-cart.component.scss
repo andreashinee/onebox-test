@@ -1,0 +1,38 @@
+.cart {
+    width: 18rem;
+    padding: 1rem;
+  }
+  
+  .cart-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cart-item {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+  
+    .cart-quantity {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+  
+      img {
+        width: 0.9rem;
+        height: 0.9rem;
+        margin: 0;
+      }
+    }
+  }
+  

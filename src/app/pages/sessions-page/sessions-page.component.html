@@ -1,0 +1,16 @@
+<div class="sessions-page">
+  @if (eventData?.event) {
+    <app-session-list
+      [sessions]="sessions"
+      (sessionChange)="onSessionChange($event)"
+    ></app-session-list>
+
+    <app-shopping-cart
+      [cart]="cart"
+      (removeFromCart)="onRemoveFromCart($event)"
+    ></app-shopping-cart>
+  } @else {
+    <p>EVENT INFO NOT FOUND</p>
+  }
+  <a class="back-button" routerLink="/">Volver</a>
+</div>
